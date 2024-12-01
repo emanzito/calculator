@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=2.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Simple Calculator</title>
+  </head>
+  <body>
+    <h1>Welcome to a simple calculator!</h1>
+    <div class="calculadora">
+      <div class="box" id="box">
+        <input type="text" id="resultado" readonly placeholder="0" />
+      </div>
+
+      <div class="numeros" id="numeros">
+        <button onclick="adicionarNumero(1)">1</button>
+        <button onclick="adicionarNumero(2)">2</button>
+        <button onclick="adicionarNumero(3)">3</button>
+        <button onclick="adicionarNumero(4)">4</button>
+        <button onclick="adicionarNumero(5)">5</button>
+        <button onclick="adicionarNumero(6)">6</button>
+        <button onclick="adicionarNumero(7)">7</button>
+        <button onclick="adicionarNumero(8)">8</button>
+        <button onclick="adicionarNumero(9)">9</button>
+      </div>
+
+      <div class="sinais">
+        <button onclick="adicionarSinal('+')">+</button>
+        <button onclick="adicionarSinal('-')">-</button>
+        <button onclick="adicionarSinal('*')">*</button>
+        <button onclick="adicionarSinal('/')">/</button>
+        <button onclick="limpar()">C</button>
+        <button onclick="removerUltimo()">DEL</button>
+        <button onclick="executar()">EXE</button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
